@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Etiquetas Open Graph -->
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta name="author" content="Pablo Vivanco Lara - UX Portfolio">
+  
+
+  <!-- Título -->
+  <title>UX Portfolio - Pablo Vivanco Lara</title>
+
+  <style>
+    *, *:before, *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background:#000;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 , h2, h3, h4 {
+        color: #eaeaea;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    p{
+        color: #6D6D76;
+        font-size: 20px;
+    }
+
+    ul {
+        padding-left: 0.8rem;
+    }
+
+    a {
+    text-decoration: none;
+    color: #0080ff;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    display: block;
+    } 
+
+    .container {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 2rem;
+    }
+
+    .flex-colum{
+        flex-direction: column;
+
+    }
+
+    .flex-row{
+        flex-direction: row;
+
+    }
+
+    /*** Header ***/
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        margin-top: 5rem;
+        padding: 0 2rem;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .brand img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+
+    .brand h3 {
+        color: #fff;
+        margin: 0;
+    }
+
+
+    .nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 40px;
+    }
+
+    .nav ul li {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        padding: 1rem 2rem;
+    }
+
+    .nav a {
+        display: inline-block;
+        font-size:1.1rem;
+        padding: 1rem 2rem;
+    }
+
+    .nav a:hover {
+        color: #fff;
+    }
+
+    .active {
+        border: 2px solid #0080ff;
+        border-radius: 3rem;
+        color:#0080ff;
+    }
+
+    .noActive{
+        color: #999999;
+    }
+
+
+    /*** Porpose ***/
+
+
+    #porpose h2 {
+        color: #fff;
+        font-weight: 100;
+        padding: 8rem 2rem 0 2rem;
+        line-height: 3rem;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .porposeImg {
+        width: 90%;
+        height: 400px;
+        border-radius: 24px;
+        background: linear-gradient(145deg, #0e0e0e, #1a1a1a);
+        border: 1px solid #2c2c2c;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /** Work **/
+
+    #work {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        gap: 6rem;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+    }
+
+    .casesList , .workList {
+        flex: 1;
+    }
+
+    .casesList ul {
+        padding: 0;
+    }
+
+    .workList ul {
+        padding-top: 1rem;
+    }
+
+    .workList ul li {
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+
+    .workList ul li img {
+        width: 45px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .work-text {
+        padding-left: 1.4rem;
+    }
+
+    .work-text p{
+        padding-top: 0.3rem;
+    }
+
+    .case {
+        position: relative;
+        width: 100%;
+        height: 210px;
+        border-radius: 24px;
+        padding-right: 11rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        background: #000;
+        z-index: 0;
+        color: white;
+    }
+
+    .case::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(135deg, #3030348e, #1f1f26);
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+                mask-composite: exclude;
+        z-index: -1;
+    }
+
+    .case p {
+        color: #fff;
+        padding-top: 0.8rem;
+        line-height: 1.6rem;
+    }
+
+    .casesList ul li {
+        padding-top: 2rem;
+    }
+
+    #case1 img {
+        width: 30px;
+    }
+
+    #case2 img {
+        width: 93px;
+    }
+
+    /** Projects **/
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        gap: 6rem;
+    }
+
+    #projects h3 {
+        padding-bottom: 2rem;
+    }
+
+    #projects div img {
+        width:359px;
+    }
+
+    .patent-item {
+  display: flex;
+  align-items: center; /* alinea en la parte superior para multilinea */
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.patent-item .icon {
+  width: 48px !important;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: 0.2em; /* opcional: ajusta la alineación vertical */
+}
+
+    /** Footer **/
+
+    footer{
+        padding: 9rem 4rem;
+        text-align: center;
+    }
+
+    footer p{
+        line-height: 1.7rem;
+    }
+
+    /*** Responsive ***/
+
+    @media (min-width: 768px) {
+        #header {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .nav {
+            margin-left: auto; /* esto alinea el bloque nav a la derecha */
+        }
+
+        #work {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .casesList , .workList {
+            flex: 0 0 48%;
+        }
+
+        #projects {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .nav ul {
+            padding: 2rem 0 0 0;
+        }
+
+        #porpose h2 {
+            padding: 3rem 2rem 0 2rem;
+        }
+
+
+        .case p {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 766px){
+        #work {
+            gap: 1rem;
+        }
+
+        .casesList{
+            padding-bottom: 4rem;
+        }
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- header -->
+        <div id="header"> 
+            <div class="brand item">
+                <img src="i/avatar.png">
+                <h3>Pablo</h3>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="active">Work</a></li>
+                    <li><a href="#" class="noActive">About</a></li>
+                    <li><a href="#" class="noActive">Code</a></li>
+                </ul>
+            </div>#
+
+        </div>
+
+        <!-- Porpose -->
+        <div id="porpose">
+            <h2>Friction wastes time. Noise hides value.
+                In my role I work to bring clarity to distill complexity into purpose. 
+                From a fleeting vision to something profoundly useful.
+            </h2>
+        
+        <div class="porposeImg">
+            
+        </div>
+
+
+
+        </div>
+        
+        <!-- Work -->
+        <div id="work">
+            <div class="casesList">
+                <h3>Cases</h3>
+                <ul>
+                    <li>
+                        <div class="case" id="case1">
+                            <img src="i/itau-case-1.png" alt="">
+                            <p>Itaú cut calls ~90% with self-service card lock.</p>
+                        </div>
+                        <a href="#">View case ↗</a>
+                    </li>
+                    <li>
+                        <div class="case" id="case2">
+                            <img src="i/latam-case-2.png" alt="">                           
+                            <p>One checkout for money + miles: 35% faster bookings </p>
+                        </div>
+                        <a href="#">View case ↗</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="workList">
+                <h3>Work</h3>
+                <ul>
+                    <li>
+                        <div class="item">
+                            <img src="i/latam-airlines.png" alt="">
+                            <div class="work-text">
+                                <h4>LATAM Airlines</h4>
+                                <p>Airline & Travel</p>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="item">
+                            <img src="i/itu.png" alt="">
+                            <div class="work-text">
+                                <h4>itu</h4>
+                                <p>Neo Bank</p>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="item">
+                            <img src="i/airnguru.png" alt="">
+                            <div class="work-text">
+                                <h4>Airnguru</h4>
+                                <p>Pricing Intelligence</p>
+                            </div>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="item">
+                            <img src="i/zurich.png" alt="">
+                            <div class="work-text">
+                                <h4>Zurich</h4>
+                                <p>Ensurance</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#">View more ↗</a>
+            </div>
+        </div>
+
+        <!-- Side Projects -->
+        <div id="projects">
+            <div class="sideProjects">
+                <h3>Side projects</h3>
+                <img src="i/jupitest.png" alt="">
+                <a href="https://jupitest.app/" target="_blank">Jupitest - Guerrilla test app. <br>Get App ↗</a>
+            </div>
+            <div class="patents">
+                <h3>Design patents</h3>
+                <img src="i/patent.png" alt="">
+                <div  class="patent-item"><img src="i/award.png" alt="" class="icon">
+                    <a href="https://patents.google.com/patent/US20170323320A1/en?assignee=Airnguru+SA" target="_blank">Systems and methods for determining price competitiveness ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Pablo Vivanco. <br>Some data has been hidden due to confidentiality.</p>
+        </footer>
+    </div>
+
+  
+</body>
+</html>
+
+
