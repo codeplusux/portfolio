@@ -174,9 +174,10 @@ a {
 }
 
 .card p {
-    color: #777;
+    color: #969696;
     font-size: 0.95rem;
     margin: 0;
+    line-height: 1.3rem;
 }
 
 .project-brand {
@@ -324,7 +325,7 @@ footer p {
 }
 
 footer p {
-    color: #38383c;
+    color: #47474C;
 }
 
 
