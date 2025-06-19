@@ -45,7 +45,7 @@ a {
     text-decoration: none;
     color: #fff;
     font-size: 1.3rem;
-    padding: 0.8rem;
+    padding: 0.8rem 0;
     display: block;
 }
 
@@ -68,9 +68,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 5rem;
     padding: 0 2rem;
+    gap: 2rem;
 }
 
 .brand {
@@ -95,7 +96,7 @@ a {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 
 }
 
@@ -133,7 +134,8 @@ a {
     gap: 4rem;
     justify-content: center;
     margin: 8rem auto;
-    padding: 0 0rem;
+    padding: 0 2rem;
+    flex-direction: column;
 }
 
 .card {
@@ -141,7 +143,6 @@ a {
     border-radius: 1rem;
     padding: 1.5rem;
     width: 100%;
-    max-width: 210px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -188,9 +189,9 @@ footer p {
 #porpose h2 {
     color: #fff;
     font-weight: 100;
-    padding: 8rem 2rem 0 2rem;
+    padding: 5rem 2rem 0 2rem;
     line-height: 3rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 0;
 }
 
@@ -209,7 +210,7 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 24px;
-    gap: 6rem;
+    gap: 7rem;
     padding-top: 2rem;
     padding-bottom: 6rem;
 }
@@ -283,9 +284,10 @@ footer p {
 /** Projects **/
 #projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 24px;
-    gap: 6rem;
+    justify-content: space-between;
+    gap: 3rem;
 }
 
 #projects h3 {
@@ -294,13 +296,13 @@ footer p {
 
 #projects div img {
     width: 100%;
+    padding-top: 1rem;
 }
 
 .patent-item {
     display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    max-width: 600px;
+    align-items: flex-start;
+    gap: 1.6rem;
 }
 
 .patent-item .icon {
@@ -310,73 +312,45 @@ footer p {
     margin-top: 0.2em;
 }
 
-/* Responsive */
-@media (min-width: 600px) {
-    .card {
-        flex: 1 1 calc(30% - 1.5rem);
+
+
+
+/* ===================== */
+/* Tablets               */
+/* ===================== */
+@media (min-width: 768px) {
+
+
+    #header {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+}
+
+    #work {
+        flex-direction: row;
+    }
+
+        #porpose h2{
+        padding: 5rem 2rem 0 2rem;
+        line-height: 3.3rem;
+        font-size: 2.5rem;
     }
 
     .grid {
-        justify-content: center;
-        margin: 8rem auto;
-        padding: 0 1rem;
-    }
-}
-
-@media (min-width: 768px) {
-    #header {
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
     }
 
-    .nav {
-        margin-left: auto;
-    }
-
-    #work {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .casesList, .workList {
-        flex: 0 0 48%;
+    .card{
+        max-width: 200px;
     }
 
     #projects {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    justify-content: space-between;
+    gap: 6rem;
+}
 }
 
-@media (min-width: 900px) {
-    .card {
-        flex: 1 1 calc(33.33% - 1.5rem);
-    }
-}
-
-@media (max-width: 767px) {
-    .nav ul {
-        padding: 2rem 0 0 0;
-    }
-
-    #porpose h2 {
-        padding: 3rem 2rem 0 2rem;
-        line-height: 2.3rem;
-        font-size: 1.4rem;
-    }
-
-    .porposeImg {
-        padding-top: 4rem;
-    }
-}
-
-@media (max-width: 766px) {
-    #work {
-        gap: 1rem;
-    }
-
-    .casesList {
-        padding-bottom: 4rem;
-    }
-}
