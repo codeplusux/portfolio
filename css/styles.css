@@ -115,6 +115,10 @@ a {
     color: #fff;
 }
 
+.nav a:hover.active {
+    color: #0080ff;
+}
+
 .active {
     border: 2px solid #0080ff;
     border-radius: 3rem;
@@ -122,9 +126,9 @@ a {
 }
 
 .noActive {
-    color: #999999;
-    border: 1px solid;
+    color: #767676;
     border-radius: 100px;
+    background-color: #0e0e0e;
 }
 
 /** Grid **/
@@ -291,7 +295,7 @@ footer p {
 }
 
 #projects h3 {
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 #projects div img {
