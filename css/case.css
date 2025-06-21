@@ -81,9 +81,6 @@ a {
 /* Tablets               */
 /* ===================== */
 @media (min-width: 700px) {
-    .itemCase{
-        display: flex;
-        flex-direction: row;
-    }
+
 }
 

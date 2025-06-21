@@ -19,11 +19,15 @@
   color: #fff;
   font-family: -apple-system, Helvetica, sans-serif;
 }
-/* Estilo base: Mobile First */
+
+a{
+    text-decoration: none;
+}
+
+
 .case-slide {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   padding: 1rem;
 }
 
@@ -65,7 +69,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   gap: 2rem;
   position: relative;
 }
@@ -92,13 +96,9 @@
 }
 
 .arrows {
-  position: absolute;
-  top: 50%;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
-  transform: translateY(-50%);
 }
 
 .arrow {
@@ -110,24 +110,8 @@
 
 /* Desktop o tablets */
 @media (min-width: 768px) {
-  .content {
-    flex-direction: column;
-    text-align: center;
-    gap: 3rem;
-  }
 
-  .text h2 {
-    font-size: 2rem;
-    max-width: 700px;
-  }
-
-  .note {
-    font-size: 0.85rem;
-  }
-
-  .image-container img {
-    max-width: 700px;
-  }
+    
 }
     </style>
 
@@ -152,6 +136,11 @@
 
   <div class="progress-bar"></div>
 
+      <div class="arrows">
+      <button class="arrow left">‹</button>
+      <button class="arrow right">›</button>
+    </div>
+
   <main class="content">
     <div class="image-container">
       <img src="Cover.png" alt="Case Itaú" />
@@ -159,11 +148,6 @@
     <div class="text">
       <h2>Simpler security, ~90% fewer calls: Itaú’s self-service lock card experience.</h2>
       <p class="note">© Portfolio 2025 Pablo Vivanco<br>Some data has been hidden due to confidentiality.</p>
-    </div>
-
-    <div class="arrows">
-      <button class="arrow left">‹</button>
-      <button class="arrow right">›</button>
     </div>
   </main>
 </div>
