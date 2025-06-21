@@ -1,0 +1,89 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    color: #eaeaea;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+p {
+    color: #6D6D76;
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 0.8rem 0;
+    display: block;
+}
+
+/* ===================== */
+/* Header               */
+/* ===================== */
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.itemCase{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lime;
+}
+
+.brand img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+
+/* ===================== */
+/* Tablets               */
+/* ===================== */
+@media (min-width: 700px) {
+    .itemCase{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
