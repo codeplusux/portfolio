@@ -16,7 +16,7 @@
   
   <!-- Título -->
   <title>UX Portfolio - Pablo Vivanco Lara</title>
-
+  
 
 </head>
 <body>
@@ -52,7 +52,6 @@
 
 
         </div>
-        
         <!-- Work -->
         <div id="work">
             <div class="casesList">
@@ -140,7 +139,19 @@
         </footer>
     </div>
 
-  
+  <script>
+  const lines = [
+    document.getElementById("line1"),
+    document.getElementById("line2"),
+    document.getElementById("line3"),
+  ];
+
+  lines.forEach((line, index) => {
+    setTimeout(() => {
+      line.classList.add("visible");
+    }, index * 1600); // pausa entre frases
+  });
+</script>
 </body>
 </html>
 
