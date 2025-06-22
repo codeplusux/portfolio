@@ -76,13 +76,20 @@ a{
   width: 36px;
 }
 
+.bar {
+  height: 2px;
+  background: #161616;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  position: relative;
+}
 
 .progress-bar {
   height: 2px;
-  background: #007aff;
+  background: #0080FF;
   width: 20%;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  position: absolute;
 }
 
 .content {
@@ -92,22 +99,24 @@ a{
   align-items: center;
   text-align: left;
   gap: 2rem;
+  padding-top: 2rem;
 }
 
 .image-container {
   text-align: center;
+  padding: 0 2rem;
 }
 
 .image-container img {
-  width: 70%;
+  width:100%;
 }
 
-  .text{
-    padding: 0 4rem;
-  }
+.text{
+  padding: 0 2rem;
+}
 
 .text h2 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 300;
 }
 
@@ -115,18 +124,17 @@ a{
     font-size: 1rem;
     color: #666;
     line-height: 1.3rem;
-    padding-top: 0.8rem;
+    padding-top: 2rem;
 }
 
 .arrows {
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 2.5rem;
 }
 
 .arrow{
-  width: 27px;
-  height: 49px;
+  height: 30px;
 }
 
 /* ===================== */
@@ -136,6 +144,18 @@ a{
   .text{
     padding: 0 7rem;
   }
+
+  .text h2 {
+    font-size: 3rem;
+  }
+
+  .arrow{
+  height: 50px;
+}
+
+.image-container {
+    padding: 0 5rem;
+}
       
 }
     </style>
@@ -159,7 +179,9 @@ a{
     <a href="../index.html"><img src="../i/close.png" alt="" class="close"/></a>
   </header>
 
-  <div class="progress-bar"></div>
+  <div class="bar">
+    <div class="progress-bar"></div>
+  </div>
 
       <div class="arrows">
       <a href="" ><img src="../i/arrow-left-off.png" alt="" class="arrow"/></a>
