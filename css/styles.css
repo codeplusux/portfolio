@@ -86,6 +86,16 @@ a {
     border-radius: 50%;
 }
 
+.brand div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.brand span {
+    color:#555555;
+}
+
 .brand h3 {
     color: #fff;
     margin: 0;
