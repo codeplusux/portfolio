@@ -70,7 +70,7 @@ a {
     align-items: left;
     justify-content: space-between;
     margin-top: 3rem;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     gap: 2rem;
 }
 
@@ -227,7 +227,7 @@ footer p {
 
 .porposeImg {
     width: 90%;
-    height: 400px;
+    height: 360px;
     border-radius: 24px;
     background: linear-gradient(145deg, #0e0e0e, #1a1a1a);
     border: 1px solid #2c2c2c;
@@ -297,6 +297,7 @@ footer p {
     color: #fff;
     padding-top: 2rem;
     line-height: 1.6rem;
+    padding-right: 1rem;
 }
 
 .casesList ul li {
@@ -309,6 +310,16 @@ footer p {
 
 #case2 img {
     width: 93px;
+}
+
+#case1{
+    background:url(../i/case-itau.png) right top no-repeat;
+    background-size: contain;
+}
+
+#case2{
+    background:url(../i/case-latam.png) right top no-repeat;
+    background-size: contain;
 }
 
 /** Projects **/
