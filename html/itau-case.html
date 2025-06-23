@@ -191,8 +191,8 @@ a{
   </div>
 
       <div class="arrows">
-      <a href="" ><img src="../i/arrow-left-off.png" alt="" class="arrow"/></a>
-      <a href=""><img src="../i/arrow-right.png" alt="" class="arrow"/></a>
+    <a href="#" class="arrow-left"><img src="../i/arrow-left.png" alt="" class="arrow"/></a>
+    <a href="#" class="arrow-right"><img src="../i/arrow-right.png" alt="" class="arrow"/></a>
     </div>
 
   <main class="content">
@@ -206,6 +206,44 @@ a{
   </main>
 </div>
 
+<script>
+  const contents = ['itau-content-1.html', 'itau-content-2.html', 'itau-content-3.html', 'itau-content-4.html', 'itau-content-5.html', 'itau-content-6.html', 'itau-content-7.html'];
+  let currentIndex = 0;
+
+  async function loadContent(index) {
+    try {
+      const res = await fetch(contents[index]);
+      if (!res.ok) throw new Error('No se pudo cargar el contenido');
+      const html = await res.text();
+      document.querySelector('.content').innerHTML = html;
+
+      // Actualizar flecha izquierda
+      const arrowLeftImg = document.querySelector('.arrow-left img');
+      if (index === 0) {
+        arrowLeftImg.src = '../i/arrow-left-off.png';
+      } else {
+        arrowLeftImg.src = '../i/arrow-left.png';
+      }
+    } catch (err) {
+      console.error('Error:', err);
+    }
+  }
+
+  document.querySelector('.arrow-right').addEventListener('click', (e) => {
+    e.preventDefault();
+    currentIndex = (currentIndex + 1) % contents.length;
+    loadContent(currentIndex);
+  });
+
+  document.querySelector('.arrow-left').addEventListener('click', (e) => {
+    e.preventDefault();
+    currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+    loadContent(currentIndex);
+  });
+
+  
+  loadContent(currentIndex);
+</script>
   
 </body>
 </html>
