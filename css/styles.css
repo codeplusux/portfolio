@@ -158,7 +158,7 @@ a {
 
 .intro {
     padding-top: 4rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -170,6 +170,38 @@ a {
 
 .pl2rem{
     padding-left: 2rem;
+}
+
+.current{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 0rem 3rem;
+    text-align: center;
+    gap: 3rem;
+    
+}
+
+.current div{
+    flex: 1;
+}
+
+.current div p{
+    color: #fff;
+    font-size: 16px;
+    padding-top: 1rem;
+}
+
+.globantBadge{
+    width: 98px;
+}
+
+.jupitestBadge{
+    width: 45px;
+}
+
+.patentBadge{
+    width: 53px;
 }
 
 /** Grid **/
@@ -432,6 +464,16 @@ footer p {
 
     video {
         border-radius: 2rem;
+    }
+
+    .current{
+        flex-direction: row;
+        padding-left: 9rem;
+        padding-right: 8rem;
+    }
+
+    .globantBadge{
+        padding-top: 1rem;
     }
 }
 
