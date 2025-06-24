@@ -221,6 +221,11 @@ footer p {
 }
 
 /*** Porpose ***/
+
+#porpose{
+    text-align: center;
+}
+
 #porpose h2 {
     color: #fff;
     font-weight: 100;
@@ -230,7 +235,7 @@ footer p {
     margin: 0;
 }
 
-.porposeImg {
+/*.porposeImg {
     width: 90%;
     height: 360px;
     border-radius: 24px;
@@ -238,6 +243,13 @@ footer p {
     border: 1px solid #2c2c2c;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 5rem auto;
+}*/
+
+video {
+    border-radius: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+    border: 1px solid #ffffff1f;
 }
 
 /** Work **/
