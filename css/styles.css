@@ -154,15 +154,33 @@ a {
 
 }
 
+/** About **/
+
+.intro {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.intro p {
+    padding-top: 2rem;
+    line-height: 1.9rem;
+}
+
+.pl2rem{
+    padding-left: 2rem;
+}
+
 /** Grid **/
 .grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 5rem;
     justify-content: center;
-    margin: 8rem auto 0;
-    padding: 0 2rem;
+    margin: 3rem auto 0;
     flex-direction: column;
+    padding: 2rem;
 }
 
 .card {
@@ -397,6 +415,7 @@ footer p {
 
     .grid {
         flex-direction: row;
+        padding: 0;
     }
 
     .card{
