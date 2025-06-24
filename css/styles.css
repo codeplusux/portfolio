@@ -180,7 +180,7 @@ a {
     justify-content: center;
     margin: 3rem auto 0;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 2rem 0;
 }
 
 .card {
@@ -362,7 +362,7 @@ video {
     flex-direction: column;
     padding: 24px;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 #projects h3 {
