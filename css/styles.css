@@ -33,7 +33,7 @@ h4 {
 }
 
 p {
-    color: #6D6D76;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -317,6 +317,9 @@ video {
     padding-top: 2rem;
     padding-bottom: 6rem;
 }
+.casesList ul li a{
+    padding: 0;
+}
 
 .casesList, .workList {
     flex: 1;
@@ -340,6 +343,7 @@ video {
 
 .work-text p {
     padding-top: 0.3rem;
+    color: #969696;
 }
 
 .case {

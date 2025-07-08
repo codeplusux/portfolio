@@ -59,12 +59,46 @@
         justify-content: center;
     }
 
+
+/* ===================== */
+/* Design Impact         */
+/* ===================== */
+
+    .designImpact {
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: start; 
+        gap: 32px;
+        padding: 4rem 2rem 0 2rem;
+    }
+
+    .designImpact > div {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;  
+        text-align: center; 
+        gap: 1rem;
+    }
+
+
+/* ===================== */
+/* Breackpoints          */
+/* ===================== */
+
     @media (min-width: 768px) {
         .headCase{
             flex-direction: row;
         }
+
+        .designImpact {
+            flex-direction: row; 
+        }
     }
+
 </style>
+
+
 <body>
 
     <div class="container">
@@ -96,7 +130,31 @@
             <div class="rightBox"><img src="../i/itau-case/hero-banner.png" class="" width="401"></div>
         </div>
 
-       
+       <div class="designImpact">
+            <div>
+                <img src="../i/itau-case/kpi-calls.png" class="" width="30px"> 
+                <h2>~ 90% </h2>
+                <p>Drop in support calls related to card blocks</p>
+            </div>
+
+            <div>
+                <img src="../i/itau-case/kpi-money.png" class="" width="45px"> 
+                <h2>~ $61,000  </h2>
+                <p>Saved in support costs over ~6 months</p>
+            </div>
+            
+            <div>
+                <img src="../i/itau-case/kpi-downloads.png" class="" width="25px"> 
+                <h2>~ 2,000+ </h2>
+                <p>Feature adopted by users in the first semester</p>
+            </div>
+
+            <div>
+                <img src="../i/itau-case/kpi-csat.png" class="" width="25px"> 
+                <h2> -- </h2>
+                <p>Security perception improved, confirmed by CSAT boost</p>
+            </div>
+       </div>
             
 
 
