@@ -29,6 +29,15 @@
         padding-left: 2rem;
     }
 
+    .caseSubTitle {
+        color:#51E699;
+        font-size: 1.2rem;
+        padding-top: 6rem;
+        padding-left: 2rem;
+        font-weight: 100;
+        letter-spacing: 0.03rem;
+    }
+
 
 /* ===================== */
 /* Header               */
@@ -52,6 +61,10 @@
         align-items: flex-start;
         flex-direction: column;
         display: flex;
+    }
+
+    .headCase .leftBox ul li{
+        list-style-type: disc;
     }
 
     .leftBox ul {
@@ -120,14 +133,8 @@
         display: flex;
         color: #fff;
         flex-direction: column;
-        padding: 2rem 2rem 0 2rem;
+        padding: 2rem 2rem 9rem 2rem;
         gap: 2rem;
-    }
-
-     .businessImpact .rightBox p {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        font-weight: 100;
     }
 
     .businessImpact .leftBox {
@@ -136,12 +143,51 @@
         display: flex;
     }
 
+
+/* ===================== */
+/* Section divider       */
+/* ===================== */
+
+.divider {
+    color: #51E699;
+    background-color: #002B15;
+    width: 200px;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem 3rem;
+    margin: 0 auto;
+}
+
+
+/* ===================== */
+/* Stage One       */
+/* ===================== */
+
+.stageOne {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding: 2rem 2rem 9rem 2rem;
+    gap: 2rem;
+}
+
+
+.stageOne .rightBox img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
 /* ===================== */
 /* Breackpoints          */
 /* ===================== */
 
     @media (min-width: 768px) {
-        .headCase , .businessImpact{
+        .headCase , .businessImpact , .stageOne{
             flex-direction: row;
         }
 
@@ -149,7 +195,20 @@
             flex-direction: row; 
             gap:4rem;
         }
+
+        .stageOne .leftBox{
+            width: 100%;
+        }
+
     }
+
+/* ===================== */
+/* Section divider          */
+/* ===================== */
+
+
+
+
 
 </style>
 
@@ -185,7 +244,7 @@
             <div class="rightBox"><img src="../i/itau-case/hero-banner.png" class="" width="401"></div>
         </div>
 
-                    <h2 class="caseSectionTitle">Design Impact</h2>
+        <h2 class="caseSectionTitle">Design Impact</h2>
 
        <div class="designImpact">
             <div>
@@ -213,7 +272,7 @@
             </div>
        </div>
             
-                   <h2 class="caseSectionTitle">Business Context</h2>
+        <h2 class="caseSectionTitle">Business Context</h2>
 
         <div class="businessImpact">
             <div class="leftBox">                
@@ -227,6 +286,26 @@
             </div>
         </div>
 
+        <h2 class="divider">Key Stages</h2>
+
+        <h2 class="caseSubTitle">Uncovering key pain points in card blocking through interviews and mapping</h2>
+
+        <div class="stageOne">
+            <div class="leftBox">                
+                <p>After aligning with the business, I conducted an empathy map workshop based on 
+                interviews with frequent support callers. It revealed key emotions during card 
+                loss: urgency, doubt, and lack of control. Sharing these insights helped create 
+                urgency internally, turning a recurring issue into a product priority.</p>
+            </div>
+            <div class="rightBox">
+                <img src="../i/itau-case/uncovering-pain-points.png" class="">
+            
+                <ul>
+                    <li><img src="../i/itau-case/metrics1.png" class="" width="250"></li>
+                    <li><img src="../i/itau-case/metrics2.png" class="" width="250"></li>
+                </ul>
+            </div>
+        </div>
 
         <footer>
             <p>&copy; Portafolio 2025 <br> Empirical + Iterative + Incremental<br>Pablo Vivanco</p>
