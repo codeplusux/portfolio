@@ -60,6 +60,8 @@
 
     .leftBox ul li{
         padding-top: 0.5rem;
+        line-height: 1.5rem;
+        font-weight: 100;
     }
 
     .rightBox{
@@ -75,10 +77,10 @@
 
     .designImpact {
         display: flex;
-        flex-direction: column; 
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: start; 
-        gap: 32px;
+        gap: 2rem;
         padding:3rem 2rem 0 2rem;
     }
 
@@ -87,7 +89,8 @@
         flex-direction: column; 
         align-items: center;  
         text-align: center; 
-        gap: 1rem;
+        gap: 0.5rem;
+        max-width: 10rem;
     }
 
     .kpiColor1{
@@ -110,18 +113,24 @@
 /* Business Context         */
 /* ===================== */
 
-    .headCase{
+    .businessImpact{
         display: flex;
         color: #fff;
         flex-direction: column;
-        padding: 4rem 2rem 0 2rem;
+        padding: 2rem 2rem 0 2rem;
         gap: 4rem;
     }
 
-     .headCase .rightBox p {
+     .businessImpact .rightBox p {
         font-size: 1.2rem;
         line-height: 1.6rem;
         font-weight: 100;
+    }
+
+    .businessImpact .leftBox {
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
 /* ===================== */
@@ -129,7 +138,7 @@
 /* ===================== */
 
     @media (min-width: 768px) {
-        .headCase{
+        .headCase , .businessImpact{
             flex-direction: row;
         }
 
@@ -196,13 +205,13 @@
             <div>
                 <img src="../i/itau-case/kpi-csat.png" class="" width="25px"> 
                 <h2 class="kpiColor4"> -- </h2>
-                <p class="kpiColor4">Security perception improved, confirmed by CSAT boost</p>
+                <p class="kpiColor4">Security perception confirmed by CSAT boost”</p>
             </div>
        </div>
             
                    <h2 class="caseSectionTitle">Business Context</h2>
 
-        <div class="headCase">
+        <div class="businessImpact">
             <div class="leftBox">                
                 <img src="../i/itau-case/businessContext.png" class="" width="284">
             </div>
