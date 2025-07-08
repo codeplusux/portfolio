@@ -19,6 +19,52 @@
   <title>UX Portfolio - Pablo Vivanco Lara</title>
 
 </head>
+
+<style>
+
+/* ===================== */
+/* Header               */
+/* ===================== */
+
+    .headCase{
+        display: flex;
+        color: #fff;
+        flex-direction: column;
+        padding: 4rem 2rem 0 2rem;
+        gap: 4rem;
+    }
+
+    .headCase div h1 {
+        font-size:2.3rem;
+        font-weight: 100;
+    }
+
+    .leftBox {
+        align-items: flex-start;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .leftBox ul {
+        padding-top: 2rem;
+    }
+
+    .leftBox ul li{
+        padding-top: 0.5rem;
+    }
+
+    .rightBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+        .headCase{
+            flex-direction: row;
+        }
+    }
+</style>
 <body>
 
     <div class="container">
@@ -38,9 +84,16 @@
             </div>
         </div>
 
-        <div class="">
-
-            
+        <div class="headCase">
+            <div class="leftBox">                
+                <img src="../i/itau.png" class="project-brand">
+                <h1 class="caseTitle">Simpler security, ~90% fewer calls: Itaú’s self-service lock card experience.</h1>
+                <ul>
+                    <li>I led the UX process end-to-end, from stakeholder alignment to delivery</li>
+                    <li>Some data is hidden due to confidentiality</li>
+                </ul>
+            </div>
+            <div class="rightBox"><img src="../i/itau-case/hero-banner.png" class="" width="401"></div>
         </div>
 
        
