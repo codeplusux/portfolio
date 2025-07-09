@@ -22,6 +22,9 @@
 
 <style>
 
+    .container{
+        max-width: 100%;
+    }
 
     .caseSectionTitle {
         font-size: 1.2rem;
@@ -85,9 +88,6 @@
         justify-content: center;
     }
 
-    .headCase .rightBox img{
-        padding: 0 2rem;
-    }
 
 /* ===================== */
 /* Design Impact         */
@@ -164,13 +164,27 @@
         top: 0%;
     }
 
+        .dividerBottom {
+        color: #51E699;
+        background-color: #002B15;
+        width: 220px;
+        border-radius: 3rem;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0.5rem 3rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: -1%;
+    }
+
 
 /* ===================== */
 /* Stages       */
 /* ===================== */
 
     .bgKeyStages{
-        /*background-color:#121212;*/
+        background-color:#121212;
         position: relative;
     }
 
@@ -178,7 +192,7 @@
     display: flex;
     color: #fff;
     flex-direction: column;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     gap: 4rem;
 }
 
@@ -194,7 +208,7 @@
     display: flex;
     color: #fff;
     flex-direction: column;
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     gap: 2rem;
 }
 
@@ -230,7 +244,7 @@
     display: flex;
     color: #fff;
     flex-direction: column;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     gap: 3rem;
 }
 
@@ -246,12 +260,34 @@
     padding-left: 2rem;
 }
 
+.stageFive {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding: 2rem 2rem 9rem 2rem;
+    gap: 3rem;
+}
+
+.stageFive .leftBox img {
+    width: 100%;
+}
+
+.stageFive .rightBox {
+    flex-direction: column;
+}
+
 
 /* ===================== */
 /* Breackpoints          */
 /* ===================== */
 
     @media (min-width: 768px) {
+
+            .w850{
+        width: 850px;
+        margin: 0 auto;
+    }
+
         .headCase , .businessImpact , .stageOne , .stageThree{
             flex-direction: row;
         }
@@ -293,7 +329,7 @@
 
     <div class="container">
         <!-- header -->
-        <div id="header"> 
+        <div id="header" class="w850"> 
             <div class="brand item">
                 <img src="../i/avatar.png">
                 <div>
@@ -308,7 +344,7 @@
             </div>
         </div>
 
-        <div class="headCase">
+        <div class="headCase w850">
             <div class="leftBox">                
                 <img src="../i/itau.png" class="project-brand">
                 <h1 class="caseTitle">Simpler security, ~90% fewer calls: Itaú’s self-service lock card experience.</h1>
@@ -320,37 +356,37 @@
             <div class="rightBox"><img src="../i/itau-case/hero-banner.png" class="" width="401"></div>
         </div>
 
-        <h2 class="caseSectionTitle">Design Impact</h2>
+        <h2 class="caseSectionTitle w850">Design Impact</h2>
 
-       <div class="designImpact">
+       <div class="designImpact w850">
             <div>
                 <img src="../i/itau-case/kpi-calls.png" class="" width="30px"> 
                 <h2 class="kpiColor1">~ X%</h2>
-                <p class="kpiColor1">Drop in support calls related to card blocks</p>
+                <p>Drop in support calls related to card blocks</p>
             </div>
 
             <div>
                 <img src="../i/itau-case/kpi-money.png" class="" width="45px"> 
                 <h2 class="kpiColor2">~ $X</h2>
-                <p class="kpiColor2">Saved in support costs over ~6 months</p>
+                <p>Saved in support costs over ~6 months</p>
             </div>
             
             <div>
                 <img src="../i/itau-case/kpi-downloads.png" class="" width="25px"> 
                 <h2 class="kpiColor3">~ X+</h2>
-                <p class="kpiColor3">Feature adopted by users in the first semester</p>
+                <p>Feature adopted by users in the first semester</p>
             </div>
 
             <div>
                 <img src="../i/itau-case/kpi-csat.png" class="" width="25px"> 
                 <h2 class="kpiColor4"> -- </h2>
-                <p class="kpiColor4">Security perception confirmed by CSAT boost”</p>
+                <p>Security perception check by CSAT</p>
             </div>
        </div>
             
-        <h2 class="caseSectionTitle">Business Context</h2>
+        <h2 class="caseSectionTitle w850">Business Context</h2>
 
-        <div class="businessImpact">
+        <div class="businessImpact w850">
             <div class="leftBox">                
                 <img src="../i/itau-case/businessContext.png" class="" width="284">
             </div>
@@ -362,101 +398,99 @@
             </div>
         </div>
     
-    
-    
         <div class="bgKeyStages">
-        <h2 class="divider">Key Stages</h2>
+            <div class="w850">
+                <h2 class="divider">Key Stages</h2>
+                <br>
+                <h2 class="caseSubTitle">Uncovering key pain points in card blocking through interviews and mapping</h2>
+                <br>
+                <div class="stageOne">
+                    <div class="leftBox">                
+                        <p>After aligning with the business, I conducted an empathy map workshop based on 
+                        interviews with frequent support callers. It revealed key emotions during card 
+                        loss: urgency, doubt, and lack of control. Sharing these insights helped create 
+                        urgency internally, turning a recurring issue into a product priority.</p>
+                    </div>
+                    <div class="rightBox">
+                        <img src="../i/itau-case/uncovering-pain-points.png" class="">
+                    </div>
+                </div>
 
-        <h2 class="caseSubTitle">Uncovering key pain points in card blocking through interviews and mapping</h2>
-        <br><br>
-        <div class="stageOne">
-            <div class="leftBox">                
-                <p>After aligning with the business, I conducted an empathy map workshop based on 
-                interviews with frequent support callers. It revealed key emotions during card 
-                loss: urgency, doubt, and lack of control. Sharing these insights helped create 
-                urgency internally, turning a recurring issue into a product priority.</p>
-            </div>
-            <div class="rightBox">
-                <img src="../i/itau-case/uncovering-pain-points.png" class="">
-            </div>
-        </div>
+                <h2 class="caseSubTitle">Aligning hypotheses and prioritizing solutions with stakeholders</h2>
 
-        <h2 class="caseSubTitle">Aligning hypotheses and prioritizing solutions with stakeholders</h2>
+                <div class="stageTwo">
+                    <div class="leftBox">                
+                        <img src="../i/itau-case/hypothesis.png" class="">
+                    </div>
+                    <div class="rightBox">
+                        <p>During prioritization and brainstorming sessions with stakeholders, 
+                            we explored ideas based on three key factors: user impact, internal 
+                            feasibility, and business value. This helped align expectations early 
+                            and shape a solution that was desirable, viable, and feasible.
+                            The temporary card lock emerged as a key initiative, initially framed for the mobile channel.</p>
+                    </div>
+                </div>
 
-        <div class="stageTwo">
-            <div class="leftBox">                
-                <img src="../i/itau-case/hypothesis.png" class="">
-            </div>
-            <div class="rightBox">
-                <p>During prioritization and brainstorming sessions with stakeholders, 
-                    we explored ideas based on three key factors: user impact, internal 
-                    feasibility, and business value. This helped align expectations early 
-                    and shape a solution that was desirable, viable, and feasible.
-                    The temporary card lock emerged as a key initiative, initially framed for the mobile channel.</p>
-            </div>
-        </div>
+                <h2 class="caseSubTitle">Co-designing and iterating a mobile-first card lock experience with stakeholders</h2>
 
+                <div class="stageThree">
+                    <div class="leftBox">                
+                        <p>After defining the problem and opportunity areas, I focused on designing 
+                            and prototyping multiple interactive experiences to trigger early conversations 
+                            with brand managers, IT and cybersecurity. The goal was not just to visualize 
+                            a solution, but to create tangible flows that enabled meaningful feedback, 
+                            exposed technical feasibility, and aligned with Itaú’s design system and internal 
+                            standards.</p>
+                    </div>
+                    <div class="rightBox">
+                        <img src="../i/itau-case/prototyping.png" class="">
+                    </div>
+                </div>
+                <br><br><br>
+                <h2 class="caseSubTitle">Validating navigation and switch usability with users</h2>
+                <br>
+                <div class="stageFour">
+                    <div class="leftBox">                
+                        <img src="../i/itau-case/user-research.png" class="">
+                    </div>
+                    <div class="rightBox">
+                        <p>In this stage to validate the main design hypothesis, I conducted moderated 
+                            usability test (Qualitative Research) with 15 clients from two of Itaú’s 
+                            segments (Sucursal and Personal Bank), including both men and women with 
+                            diverse digital and financial maturity levels. 
+                            <br>
+                            The main trends after user research:</p>
+                                            <ul>
+                                <li>Simplicity and instant confirmation build trust faster than layered flows.</li>
+                                <li>Redundant access points help users find key actions fasterz</li>
+                                <li>(*) Users were 3× faster vs. benchmark apps. Time measured from first screen tap 
+                                    to successful confirmation of card block</li>
+                            </ul>
+                    </div>
+                </div>        
 
-        <h2 class="caseSubTitle">Co-designing and iterating a mobile-first card lock experience with stakeholders</h2>
-
-        <div class="stageThree">
-            <div class="leftBox">                
-                <p>After defining the problem and opportunity areas, I focused on designing 
-                    and prototyping multiple interactive experiences to trigger early conversations 
-                    with brand managers, IT and cybersecurity. The goal was not just to visualize 
-                    a solution, but to create tangible flows that enabled meaningful feedback, 
-                    exposed technical feasibility, and aligned with Itaú’s design system and internal 
-                    standards.</p>
-            </div>
-            <div class="rightBox">
-                <img src="../i/itau-case/prototyping.png" class="">
-            </div>
-        </div>
-        <br><br><br>
-        <h2 class="caseSubTitle">Validating navigation and switch usability with users</h2>
-        <br>
-        <div class="stageFour">
-            <div class="leftBox">                
-                <img src="../i/itau-case/user-research.png" class="">
-            </div>
-            <div class="rightBox">
-                <p>In this stage to validate the main design hypothesis, I conducted moderated 
-                    usability test (Qualitative Research) with 15 clients from two of Itaú’s 
-                    segments (Sucursal and Personal Bank), including both men and women with 
-                    diverse digital and financial maturity levels. 
-                    <br>
-                    The main trends after user research:</p>
-                                    <ul>
-                        <li>Simplicity and instant confirmation build trust faster than layered flows.</li>
-                        <li>Redundant access points help users find key actions fasterz</li>
-                        <li>(*) Users were 3× faster vs. benchmark apps. Time measured from first screen tap 
-                            to successful confirmation of card block</li>
-                    </ul>
-            </div>
-        </div>        
-
-        <h2 class="caseSubTitle">Documenting flows and aligning feasibility for smooth handoff</h2>
-        <br>
-        <div class="stageFour">
-            <div class="leftBox">                
-                <img src="../i/itau-case/delivery-flows.png" class="">
-            </div>
-            <div class="rightBox">
-                <p>After refining the design, I prepared for delivery by aligning feasibility 
-                    with developers, documenting key flows, and ensuring full adherence to Itaú’s 
-                    design system streamlining implementation and reducing rework.</p>
+                <h2 class="caseSubTitle">Documenting flows and aligning feasibility for smooth handoff</h2>
+                <br>
+                <div class="stageFive">
+                    <div class="leftBox">                
+                        <img src="../i/itau-case/delivery-flows.png" class="">
+                    </div>
+                    <div class="rightBox">
+                        <p>After refining the design, I prepared for delivery by aligning feasibility 
+                            with developers, documenting key flows, and ensuring full adherence to Itaú’s 
+                            design system streamlining implementation and reducing rework.</p>
+                    </div>
+                </div>
+                
+                <h2 class="dividerBottom">Final Design</h2>
             </div>
         </div> 
-    </div>
+    
+    <footer>
+        <p>&copy; Portafolio 2025 <br> Empirical + Iterative + Incremental<br>Pablo Vivanco</p>
+    </footer> 
 
-    <div style="position: relative;">
-        <h2 class="divider">Final Design</h2>
-
-    </div>
-        <footer>
-            <p>&copy; Portafolio 2025 <br> Empirical + Iterative + Incremental<br>Pablo Vivanco</p>
-        </footer>
-    </div>
+</div>
 
   
 </body>
