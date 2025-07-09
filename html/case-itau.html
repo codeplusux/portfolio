@@ -65,15 +65,15 @@
         display: flex;
     }
 
-    .headCase .leftBox ul li{
+    .headCase .leftBox ul li , .rightBox ul li{
         list-style-type: disc;
     }
 
-    .leftBox ul {
+    .leftBox ul{
         padding-top: 2rem;
     }
 
-    .leftBox ul li{
+    .leftBox ul li , .rightBox ul li{
         padding-top: 0.5rem;
         line-height: 1.5rem;
         font-weight: 100;
@@ -150,36 +150,36 @@
 /* Section divider       */
 /* ===================== */
 
-.divider {
-    color: #51E699;
-    background-color: #002B15;
-    width: 200px;
-    border-radius: 3rem;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 0.5rem 3rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 0%;
-}
+    .divider {
+        color: #51E699;
+        background-color: #002B15;
+        width: 220px;
+        border-radius: 3rem;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0.5rem 3rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 0%;
+    }
 
 
 /* ===================== */
 /* Stages       */
 /* ===================== */
 
-.bgKeyStages{
-    /*background-color:#121212;*/
-    position: relative;
-}
+    .bgKeyStages{
+        /*background-color:#121212;*/
+        position: relative;
+    }
 
 .stageOne {
     display: flex;
     color: #fff;
     flex-direction: column;
-    padding: 2rem 2rem 0rem 2rem;
-    gap: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
+    gap: 4rem;
 }
 
 
@@ -194,7 +194,7 @@
     display: flex;
     color: #fff;
     flex-direction: column;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 2rem 2rem 6rem 2rem;
     gap: 2rem;
 }
 
@@ -225,6 +225,26 @@
     width: 100%;
 }
 
+
+.stageFour {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding: 2rem 2rem 4rem 2rem;
+    gap: 3rem;
+}
+
+.stageFour .leftBox img {
+    width: 100%;
+}
+
+.stageFour .rightBox {
+    flex-direction: column;
+}
+
+.rightBox ul {
+    padding-left: 2rem;
+}
 
 
 /* ===================== */
@@ -341,11 +361,14 @@
                 tasks, stretching their capacity and exposing gaps in the self service experience.</p>
             </div>
         </div>
-<div class="bgKeyStages">
+    
+    
+    
+        <div class="bgKeyStages">
         <h2 class="divider">Key Stages</h2>
 
         <h2 class="caseSubTitle">Uncovering key pain points in card blocking through interviews and mapping</h2>
-
+        <br><br>
         <div class="stageOne">
             <div class="leftBox">                
                 <p>After aligning with the business, I conducted an empathy map workshop based on 
@@ -377,7 +400,6 @@
         <h2 class="caseSubTitle">Co-designing and iterating a mobile-first card lock experience with stakeholders</h2>
 
         <div class="stageThree">
-        
             <div class="leftBox">                
                 <p>After defining the problem and opportunity areas, I focused on designing 
                     and prototyping multiple interactive experiences to trigger early conversations 
@@ -389,13 +411,48 @@
             <div class="rightBox">
                 <img src="../i/itau-case/prototyping.png" class="">
             </div>
-
-
         </div>
+        <br><br><br>
+        <h2 class="caseSubTitle">Validating navigation and switch usability with users</h2>
+        <br>
+        <div class="stageFour">
+            <div class="leftBox">                
+                <img src="../i/itau-case/user-research.png" class="">
+            </div>
+            <div class="rightBox">
+                <p>In this stage to validate the main design hypothesis, I conducted moderated 
+                    usability test (Qualitative Research) with 15 clients from two of Itaú’s 
+                    segments (Sucursal and Personal Bank), including both men and women with 
+                    diverse digital and financial maturity levels. 
+                    <br>
+                    The main trends after user research:</p>
+                                    <ul>
+                        <li>Simplicity and instant confirmation build trust faster than layered flows.</li>
+                        <li>Redundant access points help users find key actions fasterz</li>
+                        <li>(*) Users were 3× faster vs. benchmark apps. Time measured from first screen tap 
+                            to successful confirmation of card block</li>
+                    </ul>
+            </div>
+        </div>        
 
+        <h2 class="caseSubTitle">Documenting flows and aligning feasibility for smooth handoff</h2>
+        <br>
+        <div class="stageFour">
+            <div class="leftBox">                
+                <img src="../i/itau-case/delivery-flows.png" class="">
+            </div>
+            <div class="rightBox">
+                <p>After refining the design, I prepared for delivery by aligning feasibility 
+                    with developers, documenting key flows, and ensuring full adherence to Itaú’s 
+                    design system streamlining implementation and reducing rework.</p>
+            </div>
+        </div> 
+    </div>
 
-</div>
+    <div style="position: relative;">
+        <h2 class="divider">Final Design</h2>
 
+    </div>
         <footer>
             <p>&copy; Portafolio 2025 <br> Empirical + Iterative + Incremental<br>Pablo Vivanco</p>
         </footer>
