@@ -34,6 +34,7 @@
         font-size: 1.4rem;
         padding-top: 6rem;
         padding-left: 2rem;
+        padding-right: 2rem;
         font-weight: 100;
         letter-spacing: 0.01rem;
         line-height: 2rem;
@@ -134,7 +135,7 @@
         display: flex;
         color: #fff;
         flex-direction: column;
-        padding: 2rem 2rem 9rem 2rem;
+        padding: 2rem 2rem 7rem 2rem;
         gap: 2rem;
     }
 
@@ -165,11 +166,11 @@
 
 
 /* ===================== */
-/* Stage One       */
+/* Stages       */
 /* ===================== */
 
 .bgKeyStages{
-    background-color:#121212;
+    /*background-color:#121212;*/
     position: relative;
 }
 
@@ -177,7 +178,7 @@
     display: flex;
     color: #fff;
     flex-direction: column;
-    padding: 2rem 2rem 9rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     gap: 2rem;
 }
 
@@ -189,14 +190,43 @@
 }
 
 
+.stageTwo {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding: 2rem 2rem 0rem 2rem;
+    gap: 2rem;
+}
 
+.stageTwo .leftBox {
+    align-items: center;
+}
+
+.stageTwo .leftBox img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.stageThree {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding: 2rem 2rem 0rem 2rem;
+    gap: 2rem;
+}
+
+.stageThree .rightBox img {
+    width: 100%;
+}
 
 /* ===================== */
 /* Breackpoints          */
 /* ===================== */
 
     @media (min-width: 768px) {
-        .headCase , .businessImpact , .stageOne{
+        .headCase , .businessImpact , .stageOne , .stageThree{
             flex-direction: row;
         }
 
@@ -206,7 +236,15 @@
         }
 
         .stageOne .leftBox{
-            width: 100%;
+            width: 60%;
+        }
+
+        .stageTwo .leftBox img{
+            width: 600px;
+        }
+
+        .stageThree .leftBox img{
+            width: 524px;
         }
 
     }
@@ -310,6 +348,40 @@
                 <img src="../i/itau-case/uncovering-pain-points.png" class="">
             </div>
         </div>
+
+        <h2 class="caseSubTitle">Aligning hypotheses and prioritizing solutions with stakeholders</h2>
+
+        <div class="stageTwo">
+            <div class="leftBox">                
+                <img src="../i/itau-case/hypothesis.png" class="">
+            </div>
+            <div class="rightBox">
+                <p>During prioritization and brainstorming sessions with stakeholders, 
+                    we explored ideas based on three key factors: user impact, internal 
+                    feasibility, and business value. This helped align expectations early 
+                    and shape a solution that was desirable, viable, and feasible.
+                    The temporary card lock emerged as a key initiative, initially framed for the mobile channel.</p>
+            </div>
+        </div>
+
+
+        <h2 class="caseSubTitle">Co-designing and iterating a mobile-first card lock experience with stakeholders</h2>
+
+        <div class="stageThree">
+            <div class="leftBox">                
+                <p>After defining the problem and opportunity areas, I focused on designing 
+                    and prototyping multiple interactive experiences to trigger early conversations 
+                    with brand managers, IT and cybersecurity. The goal was not just to visualize 
+                    a solution, but to create tangible flows that enabled meaningful feedback, 
+                    exposed technical feasibility, and aligned with Itaú’s design system and internal 
+                    standards.</p>
+            </div>
+            <div class="rightBox">
+                <img src="../i/itau-case/prototyping.png" class="">
+            </div>
+        </div>
+
+
 </div>
 
         <footer>
