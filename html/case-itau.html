@@ -260,7 +260,7 @@
     padding-left: 2rem;
 }
 
-.stageFive {
+.stageFive{
     display: flex;
     color: #fff;
     flex-direction: column;
@@ -268,13 +268,41 @@
     gap: 3rem;
 }
 
-.stageFive .leftBox img {
+.stageFive .rightBox , .finalDesign .rightBox {
+    flex-direction: column;
+}
+
+
+.finalDesign{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding: 8rem 2rem 3rem 2rem;
+    gap: 3rem;
+}
+
+.finalDesign .leftBox{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.stageFive .leftBox img , .finalDesign .leftBox img{
     width: 100%;
 }
 
-.stageFive .rightBox {
-    flex-direction: column;
+.finalDesign .rightBox p{
+    padding: 0;
 }
+
+.badgesList{
+    display: flex;
+    list-style: none;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* ===================== */
@@ -283,7 +311,7 @@
 
     @media (min-width: 768px) {
 
-            .w850{
+    .w850{
         width: 850px;
         margin: 0 auto;
     }
@@ -311,6 +339,14 @@
 
         .stageThree {
             padding: 2rem 2rem 10rem 2rem;
+        }
+
+        .finalDesign .rightBox p{
+            padding: 0 7rem;
+        }
+
+        .finalDesign .leftBox img{
+            width: 564px;
         }
     }
 
@@ -379,7 +415,7 @@
 
             <div>
                 <img src="../i/itau-case/kpi-csat.png" class="" width="25px"> 
-                <h2 class="kpiColor4"> -- </h2>
+                <h2 class="kpiColor4"> X </h2>
                 <p>Security perception check by CSAT</p>
             </div>
        </div>
@@ -447,7 +483,7 @@
                     </div>
                 </div>
                 <br><br><br>
-                <h2 class="caseSubTitle">Validating navigation and switch usability with users</h2>
+                <h2 class="caseSubTitle">Main validations with customers through moderated testing</h2>
                 <br>
                 <div class="stageFour">
                     <div class="leftBox">                
@@ -473,7 +509,7 @@
                 <br>
                 <div class="stageFive">
                     <div class="leftBox">                
-                        <img src="../i/itau-case/delivery-flows.png" class="">
+                        <img src="../i/itau-case/delivery-flows.png" class="" width="820px">
                     </div>
                     <div class="rightBox">
                         <p>After refining the design, I prepared for delivery by aligning feasibility 
@@ -485,6 +521,22 @@
                 <h2 class="dividerBottom">Final Design</h2>
             </div>
         </div> 
+
+        <div class="finalDesign w850">
+            <div class="leftBox">                
+                <img src="../i/itau-case/final-design.png" class="">
+            </div>
+            <div class="rightBox">
+                <p style="color: #959595;">This project combined research, strategy and fast iteration to solve a 
+                    critical pain point for thousands of users. Its success reinforced 
+                    the business value of empowering users through self service.</p>
+            </div>
+        </div>
+        <ul class="badgesList w850">
+            <li><a href="https://www.itau.cl/personas" target="_blank"><img src="../i/itau.png" class="" width="50px"></a></li>
+            <li><a href="https://apps.apple.com/us/app/ita%C3%BA-chile/id636150714" target="_blank"><img src="../i/itau-case/download.png" class="" width="140px"></a></li>
+            <li><img src="../i/itau-case/photo.png" class="" width="150px"></li>
+        </ul>
     
     <footer>
         <p>&copy; Portafolio 2025 <br> Empirical + Iterative + Incremental<br>Pablo Vivanco</p>
