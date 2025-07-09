@@ -285,8 +285,8 @@ footer p {
 
 #porpose{
     text-align: center;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 #porpose h2 {
@@ -308,10 +308,6 @@ footer p {
     margin: 5rem auto;
 }*/
 
-video {
-    border-radius: 1rem;
-    border: 1px solid #ffffff1f;
-}
 
 /** Work **/
 #work {
@@ -452,11 +448,6 @@ footer p {
 
     #work {
         flex-direction: row;
-    }
-
-    #porpose {
-        padding-bottom: 4rem;
-        padding-top: 6rem;
     }
 
     #porpose h2{
