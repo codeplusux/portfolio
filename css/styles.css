@@ -275,6 +275,7 @@ a {
 footer {
     padding: 7rem 2rem;
     text-align: center;
+    width: 100%;
 }
 
 footer p {
