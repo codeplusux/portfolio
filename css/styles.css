@@ -56,6 +56,10 @@ a {
     display: block;
 }
 
+video {
+    border-radius: 2rem;
+}
+
 .link {
     width: 12px !important;
     margin-left: 0.4rem;
@@ -474,10 +478,6 @@ footer p {
         justify-content: space-between;
         gap: 6rem;
         padding-top: 4rem;
-    }
-
-    video {
-        border-radius: 2rem;
     }
 
     .current{
