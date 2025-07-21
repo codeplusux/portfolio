@@ -161,7 +161,7 @@
 /* ===================== */
 
     .bgKeyStages{
-        background-color:#121212;
+        background:url(../i/bg-pattern.png) repeat #121212;
         position: relative;
     }
 
