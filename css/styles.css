@@ -294,6 +294,10 @@ footer p {
     padding-top: 4rem;
 }
 
+#porpose div video {
+    border-radius: 0;
+}
+
 #porpose h2 {
     color: #fff;
     font-weight: 100;
