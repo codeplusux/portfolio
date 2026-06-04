@@ -452,7 +452,7 @@ footer p {
     #header {
         flex-direction: row;
         justify-content: space-between;
-        gap: 0;
+        gap: 1;
     }
 
     #work {
